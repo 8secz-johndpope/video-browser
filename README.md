@@ -1,4 +1,4 @@
-# video-browser
+# video-browser inspired by this mockup: https://dribbble.com/shots/2601870-Landing-for-video-news-website
 
 ## Project setup
 ```
@@ -9,16 +9,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

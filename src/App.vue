@@ -3,7 +3,7 @@
     <Sidebar class="sidebar col-xs-3"></Sidebar>
     <div class="content col-xs-9">
         <Navbar></Navbar>
-    <!-- <SearchBar @termChange="onTermChange"> </SearchBar>
+    <!-- 
         <div class="row">
             <VideoList :videos = "videos" @videoSelect="onVideoSelect"></VideoList>
             <VideoDetail :video="selectedVideo"></VideoDetail>

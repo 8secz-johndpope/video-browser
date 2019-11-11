@@ -1,18 +1,7 @@
 <template>
     <div class="sidebar">
-       <div class="brand-name" >
-           <span>YouTube</span>
-        </div>
-       <div class="details">
-           <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="details__avatar">
-           <span class="details__name">
-               Alexandra
-           </span>
-           <span class="details_surname">
-               Barka
-           </span>
-           <button class="btn btn_details_edit">Edit Profile</button>
-        </div>
+       <SidebarBrand></SidebarBrand>
+       <SidebarProfile></SidebarProfile>
        <div class="router_links">
            <ul class="sidebar_router">
                <li>
@@ -41,8 +30,14 @@
 </template>
 
 <script>
+import SidebarBrand from './SidebarBrand'
+import SidebarProfile from './SidebarProfile'
 export default {
-    name: 'Sidebar'
+    name: 'Sidebar',
+    components: {
+        SidebarBrand,
+        SidebarProfile
+    }
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="nvbar">
-    <div class="nvbar-elements nvbar__buttons">
-      <ul class="nvbar-menu">
+    <div class="nvbar__buttons">
+      <ul class="nvbar__buttons--list">
         <li>
           <button class="btn">Home</button>
         </li>
@@ -16,8 +16,8 @@
     <div>
       <SearchBar @termChange="onTermChange"></SearchBar>
     </div>
-    <div>
-      <ul class="nvbar-menu">
+    <div class="nvbar__buttons">
+      <ul class="nvbar__buttons--list">
         <li>
           <button class="btn btn-login">Log In / Sign Up</button>
         </li>
@@ -32,17 +32,16 @@ export default {
   name: "Navbar",
   components: {
     SearchBar
+  },
+  methods: {
+    onTermChange (data) {
+      alert(data);
+    }
   }
 };
 </script>
 
-<style lang="scss" scoped>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #EFF4F7;
-}
+<style lang="scss" >
 .nvbar {
   display: flex;
   align-items: center;
@@ -54,14 +53,12 @@ export default {
   padding: 0 12px;
   margin: 0;
   &__buttons {
-     background-color: aquamarine;
+     &--list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+     }
   }
-}
-
-.nvbar-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
 }
 
 .btn {

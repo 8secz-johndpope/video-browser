@@ -60,6 +60,7 @@ export default {
   box-sizing: border-box;
   background-color: #EFF4F7;
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
 }
 
 .mainContainer {

@@ -27,6 +27,8 @@
 </template>
 
 <script>
+
+import { mapActions } from 'vuex';
 import SearchBar from "../SearchBar";
 export default {
   name: "Navbar",
@@ -34,6 +36,7 @@ export default {
     SearchBar
   },
   methods: {
+    ...mapActions(['login']),
     onTermChange (data) {
       alert(data);
     }

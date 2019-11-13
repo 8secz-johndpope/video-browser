@@ -19,7 +19,7 @@
     <div class="nvbar__buttons">
       <ul class="nvbar__buttons--list">
         <li>
-          <button class="btn btn-login">Log In / Sign Up</button>
+          <button class="btn btn-login" @click="login">Log In / Sign Up</button>
         </li>
       </ul>
     </div>

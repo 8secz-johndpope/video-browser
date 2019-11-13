@@ -1,6 +1,6 @@
 <template>
   <div class="nvbar">
-    <div class="nvbar-elements nvbr__buttons">
+    <div class="nvbar-elements nvbar__buttons">
       <ul class="nvbar-menu">
         <li>
           <button class="btn">Home</button>

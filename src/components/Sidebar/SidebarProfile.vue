@@ -13,10 +13,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '../../assets/styles/common.sass';
+
 .details {
   display: flex;
-  color: white;
+  color: $white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,7 +58,7 @@ export default {
 
 .btn:hover {
   background-color: #666;
-  color: #fff;
+  color: $white;
   bottom: 0;
   transition: all 0.5s ease-out;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.28);

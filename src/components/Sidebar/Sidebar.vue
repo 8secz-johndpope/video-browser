@@ -42,7 +42,8 @@ export default {
 };
 </script>
 
-<style >
+<style lang="scss">
+@import "../../assets/styles/common.sass";
 .sdbr {
    background: linear-gradient(
       rgba(29, 39, 51, 0.85),
@@ -66,18 +67,24 @@ export default {
 .sidebar_router li {
   height: 45px;
   width: 100%;
-  color: #ddd;
+  color: #999;
   padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: transparent;
 }
-.sidebar_router li:hover {
-  background-color: #ed5060;
-}
+
 .sidebar_router li span {
-  color: #ddd;
   margin-right: 12px;
+  background-color: transparent;
 }
+
+.sidebar_router li:hover {
+  background-color: $pink;
+  color: $white;
+}
+
+
+
 </style>

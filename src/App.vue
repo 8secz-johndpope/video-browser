@@ -1,13 +1,8 @@
 <template>
 <div class="mainContainer">
-    <Sidebar class="sidebar col-xs-3"></Sidebar>
-    <div class="content col-xs-9">
+    <Sidebar class="sidebar"></Sidebar>
+    <div class="content">
         <Navbar></Navbar>
-    <!-- 
-        <div class="row">
-            <VideoList :videos = "videos" @videoSelect="onVideoSelect"></VideoList>
-            <VideoDetail :video="selectedVideo"></VideoDetail>
-        </div> -->
     </div>
 </div> 
 </template>
@@ -58,12 +53,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: #EFF4F7;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .mainContainer {

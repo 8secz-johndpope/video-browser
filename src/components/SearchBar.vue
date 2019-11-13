@@ -1,6 +1,6 @@
 <template>
     <div class="search">
-        <input @input="onInput" />
+        <input @input="onInput" placeholder="Search..." />
     </div>  
 </template>
 
@@ -9,7 +9,10 @@ export default {
     name: 'SearchBar',
     methods: {
         onInput: function(event) {
-            this.$emit('termChange', event.target.value);
+            const term =  event.target.value;
+            if (term.length > 3) {
+                this.$emit('termChange', event.target.value);
+            }       
         }
     }
 };
@@ -17,13 +20,13 @@ export default {
 
 <style scoped>
     input {
-        width: 80%;
+        width: 90%;
         border: 1px solid #ddd;
     }
 
     .search {
+        width: 400px;
         text-align: center;
         margin: 0 12px;
-        padding: 12px;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="brand-name">
-    <span>YouTube</span>
+    <h1>YouTube</h1>
   </div>
 </template>
 
@@ -19,7 +19,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+
+.brand-name h1 {
   font-weight: 600;
   font-size: 1.1rem;
+  background-color: #ed5060;
 }
+
 </style>

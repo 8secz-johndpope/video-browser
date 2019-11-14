@@ -1,4 +1,5 @@
 import api from '../../api/google';
+import qs from 'qs';
 
 const state = {
     token: null
@@ -15,7 +16,10 @@ const actions = {
     login: () => {
         api.login();
     },
-    finilizeLogin: () => {}
+    finilizeLogin: ({ commit }, hash) => {
+        const queryString = qs.parse(hash.replace('#', ''));
+        commit('setToken', queryString.access_token);
+    }
 };
 
 const mutations = {

@@ -10,7 +10,7 @@ export default {
             response_type: 'token',
             scope: 'https://www.googleapis.com/auth/drive.metadata.readonly',
             include_granted_scopes: 'true',
-            redirect_uri: 'http://localhost:8080/',
+            redirect_uri: 'http://localhost:8080',
             state: 'pass-through value'
         };
 

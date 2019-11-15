@@ -28,7 +28,7 @@
 
 <script>
 
-import { mapActions } from 'vuex';
+import { mapActions, mapGetters } from 'vuex';
 import SearchBar from "../SearchBar";
 export default {
   name: "Navbar",

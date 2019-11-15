@@ -18,6 +18,7 @@ const actions = {
     },
     finilizeLogin: ({ commit }, hash) => {
         const queryString = qs.parse(hash.replace('#', ''));
+        window.console.log(queryString)
         commit('setToken', queryString.access_token);
         window.localStorage.setItem('token', queryString.access_token);
     }

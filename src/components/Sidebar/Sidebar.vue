@@ -20,7 +20,7 @@
           <span class="fas fa-list"></span>
           Watchlist
         </li>
-        <li>
+        <li @click="logout">
           <span class="fas fa-power-off"></span>
           Signout
         </li>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import SidebarBrand from "./SidebarBrand";
 import SidebarProfile from "./SidebarProfile";
 
@@ -38,6 +39,9 @@ export default {
   components: {
     SidebarBrand,
     SidebarProfile
+  },
+  methods: {
+    ...mapActions(['logout'])
   }
 };
 </script>

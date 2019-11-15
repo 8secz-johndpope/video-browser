@@ -9,9 +9,9 @@ export default {
             client_id: CLIENT_ID,
             response_type: 'token',
             scope: 'https://www.googleapis.com/auth/drive.metadata.readonly',
-            include_granted_scopes: 'true',
-            redirect_uri: 'http://localhost:8080',
-            state: 'pass-through value'
+            // include_granted_scopes: 'true',
+            redirect_uri: 'http://localhost:8080/',
+            // state: 'pass-through value'
         };
 
         window.location = `${ROUTE_URL}oauth2/v2/auth?${qs.stringify(queryString)}`

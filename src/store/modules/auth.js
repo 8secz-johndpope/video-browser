@@ -2,7 +2,7 @@ import api from '../../api/google';
 import qs from 'qs';
 
 const state = {
-    token: null
+    token: window.localStorage.getItem('token')
 };
 
 const getters = {
@@ -19,6 +19,7 @@ const actions = {
     finilizeLogin: ({ commit }, hash) => {
         const queryString = qs.parse(hash.replace('#', ''));
         commit('setToken', queryString.access_token);
+        window.localStorage.setItem('token', queryString.access_token)
     }
 };
 

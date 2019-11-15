@@ -18,8 +18,11 @@
     </div>
     <div class="nvbar__buttons">
       <ul class="nvbar__buttons--list">
-        <li>
+        <li v-if="!isLoggedIn">
           <button class="btn btn-login" @click="login">Log In / Sign Up</button>
+        </li>
+        <li v-else>
+          <button class="btn btn-login" >Alexandra Barka</button>
         </li>
       </ul>
     </div>
@@ -40,6 +43,9 @@ export default {
     onTermChange (data) {
       alert(data);
     }
+  }, 
+  computed: {
+    ...mapGetters(['isLoggedIn'])
   }
 };
 </script>
